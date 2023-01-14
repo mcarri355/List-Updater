@@ -1,8 +1,22 @@
 class list {
-    constructor(firstName, lastName, id) {
+    constructor(firstName, lastName, id, birth, depature, arrival, leave, returning, bags, chicken, fish, vegan, legRoom, window, headphones, seconds) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
+        this.birth = birth;
+        this.depature = depature;
+        this.arrival = arrival;
+        this.leave = leave;
+        this.returning = returning;
+        this.bags = bags;
+        this.chickem = chicken;
+        this.fish = fish;
+        this.vegan = vegan;
+        this.legRoom = legRoom;
+        this.window = window;
+        this.window = headphones;
+        this.window = seconds;
+
     }
 }
  
@@ -10,23 +24,23 @@ arr = []
 let count = 101;
  
 function addToList() {
-    let firstName = document.getElementById("firstName").value;
-    let lastName = document.getElementById("lastName").value;
-    let birth = document.getElementById("birth").value 
-    let depature = document.getElementById("depature").value 
-    let arrival = document.getElementById("arrival").value 
-    let leave = document.getElementById("leave").value
-    let returning = document.getElementById("returning").value  
-    let bags = document.getElementById("bags").value   
-    let chicken = document.getElementById("chicken").checked
-    let fish = document.getElementById("fish").checked    
-    let vegan = document.getElementById("vegan").checked  
-    let legRoom = document.getElementById("legRoom").checked  
-    let window = document.getElementById("window").checked  
-    let headphones = document.getElementById("headphones").checked  
-    let seconds = document.getElementById("seconds").checked
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var birth = document.getElementById("birth").value 
+    var depature = document.getElementById("depature").value 
+    var arrival = document.getElementById("arrival").value 
+    var leave = document.getElementById("leave").value
+    var returning = document.getElementById("returning").value  
+    var bags = document.getElementById("bags").value   
+    var chicken = document.getElementById("chicken").checked
+    var fish = document.getElementById("fish").checked    
+    var vegan = document.getElementById("vegan").checked  
+    var legRoom = document.getElementById("legRoom").checked  
+    var window = document.getElementById("window").checked  
+    var headphones = document.getElementById("headphones").checked  
+    var seconds = document.getElementById("seconds").checked
     if (firstName != "" && lastName != "" && birth != "" && depature != "" && arrival != "" && leave != "" && returning != "" && bags != "") {
-        let temp = new list(firstName, lastName, count);
+        let temp = new list(firstName, lastName, count, birth, depature, arrival, leave, returning, bags, chicken, fish, vegan, legRoom, window, headphones, seconds);
         count++;
         arr.push(temp);
         document.getElementById("firstName").value = "";
@@ -49,20 +63,20 @@ function addToList() {
 
 function display(){
     console.log("Hello")
-    document.getElementById("firstNameInfo").value = 
+    document.getElementById("firstNameInfo").value =
     document.getElementById("lastNameInfo").value = 
-    document.getElementById("birthInfo").value = 
-    document.getElementById("bagInfo").value = 
-    document.getElementById("leaveInfo").value = 
-    document.getElementById("returnInfo").value = 
-    document.getElementById("departInfo").value = 
-    document.getElementById("arriveInfo").value = 
-    document.getElementById("returnInfo").value = 
-    document.getElementById("durationInfo").value = 
-    document.getElementById("mealInfo").value = 
-    document.getElementById("ageInfo").value = 
-    document.getElementById("costInfo").value = 
-    document.getElementById("extraInfo").innerHTML = 
+    document.getElementById("birthInfo").value = ''
+    document.getElementById("bagInfo").value = ''
+    document.getElementById("leaveInfo").value = ''
+    document.getElementById("returnInfo").value = ''
+    document.getElementById("departInfo").value = ''
+    document.getElementById("arriveInfo").value = ''
+    document.getElementById("returnInfo").value = ''
+    document.getElementById("durationInfo").value = ''
+    document.getElementById("mealInfo").value = ''
+    document.getElementById("ageInfo").value = ''
+    document.getElementById("costInfo").value = ''
+    document.getElementById("extraInfo").innerHTML = ''
 }
  
 function print() {
