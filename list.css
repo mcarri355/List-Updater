@@ -1,10 +1,12 @@
 html {
     background-color: black;
     color: white;
+    height: 100%;
 }
 
 body{
     text-align: center ;
+    height: 100%;
 }
 
 span {
@@ -18,4 +20,38 @@ input {
     width: 250px;
     resize: none;
     overflow: hidden;
+}
+
+button{
+    background-color: black;
+    border: 1px white solid;
+    color: white;
+    margin: 3px;
+}
+
+.travelForm{
+   grid-area: form;
+}
+
+.travelInfo{
+    grid-area: info;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'form info';
+}
+
+@media (max-width: 1400px){
+    .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                'form'
+                'info';
+        }
 }

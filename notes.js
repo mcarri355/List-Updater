@@ -1,9 +1,9 @@
 class list {
-    constructor(firstName, lastName, birth, departure, arrive, leave, returning, bags, food, extras,id) {
+    constructor(firstName, lastName, birth, depart, arrive, leave, returning, bags, food, extras,id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birth = birth;
-        this.departure = departure;
+        this.depart = depart;
         this.arrive = arrive;
         this.leave = leave;
         this.returning = returning;
@@ -16,15 +16,15 @@ class list {
         this.time = 0;
     }
 }
-var person1 = new list("Colton", "Krupp", "2005-10-05", "Phoenix", "Atlanta", "2023-01-13", "2023-01-16","1","fish", "leg ", "1001")
-var person2 = new list("Colt", "Kru", "2006-10-05", "Phoenix", "Charleston", "2024-01-13", "2024-01-16","3","chicken", "leg hp ss ", "1002")
-var person3 = new list("C", "K", "2007-10-05", "Phoenix", "D.C.", "2022-01-13", "2022-01-16","2","vegetarian", "leg win ", "1003")
+var doug1 = new list("Matthew", "Carr", "2005-10-05", "Legoland", "Chicago", "2023-01-13", "2023-01-16","1","fish", "leg ", "1001")
+var doug2 = new list("Juan", "Lam", "2006-10-05", "Lake Superior", "Ottowa", "2024-01-13", "2024-01-16","3","chicken", "leg hp ss ", "1002")
+var doug3 = new list("Mat", "Andre", "2007-10-05", "Empire State Buidling", "Australia", "2022-01-13", "2022-01-16","2","vegetarian", "leg win ", "1003")
 var arr = []
-var ids =["firstName", "lastName", "birth", "departure","arrive","leave","returning","bags"]
-var arr2 =["firstNameInfo", "lastNameInfo", "birthInfo", "departureInfo","arriveInfo","leaveInfo","returningInfo","bagsInfo"]
-arr.push(person1)
-arr.push(person2)
-arr.push(person3)
+var ids =["firstName", "lastName", "birth", "depart","arrive","leave","returning","bags"]
+var arr2 =["firstNameInfo", "lastNameInfo", "birthInfo", "departInfo","arriveInfo","leaveInfo","returningInfo","bagsInfo"]
+arr.push(doug1)
+arr.push(doug2)
+arr.push(doug3)
 let idCheck = 0;
 let count = 1004;
 let meal = "";
