@@ -1,0 +1,21 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+body{
+    text-align: center ;
+}
+
+span {
+    border-right: white solid 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+input {
+    height: 1em;
+    width: 250px;
+    resize: none;
+    overflow: hidden;
+}

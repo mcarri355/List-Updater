@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updating List Project</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="travelForm">
+            <div class="traveler">
+                <label for="">First Name</label>
+                <br>
+                <input type="text" id="firstName" placeholder="First Name"></input>
+                <br>
+                <label for="">Last Name</label>
+                <br>
+                <input type="text" id="lastName" placeholder="Last Name"></input>
+                <br>
+                <label for="">Date of Birth</label>
+                <br>
+                <input type="date" id="birth">
+            </div>
+            <div class="location">
+                <label for="">Depature City</label>
+                <br>
+                <input type="text" name="" id="depature" placeholder="Depature City">
+                <br>
+                <label for="">Arrival City</label>
+                <br>
+                <input type="text" name="" id="arrival" placeholder="Arrival City">
+            </div>
+
+            <div class="duration">
+                <label for="">Date Leaving</label>
+                <br>
+                <input type="date" id="leave">
+                <br>
+                <label for="">Date Returning</label>
+                <br>
+                <input type="date" id="returning">
+            </div>
+
+            <div class="bags">
+                <label for="">How many Bags?</label>
+                <br>
+                <input type="number" id="bags">
+            </div>
+
+            <div class="meal">
+                <div>What meal would you liked to be served</div>
+                <br>
+                <label for="meal1">Chicken</label>
+                <input type="radio" id="chicken" name="meal">
+                <br>
+                <label for="meal2">Fish</label>
+                <input type="radio" id="fish" name="meal">
+                <br>
+                <label for="meal3">Vegan</label>
+                <input type="radio" id="vegan" name="meal">
+            </div>
+
+            <div class="extra">
+                <div>Order Your Extras ($10)</div>
+                <label for="" name="extra">Extra Leg Room</label>
+                <input type="checkbox" name="extra" id="legRoom">
+                <br>
+                <label for="" name="extra">Window Seat</label>
+                <input type="checkbox" name="extra" id="window">
+                <br>
+                <label for="" name="extra">Headphones and blindfold</label>
+                <input type="checkbox" name="extra" id="headphones">
+                <br>
+                <label for="" name="extra">Second Serving of meal</label>
+                <input type="checkbox" name="extra" id="seconds">
+            </div>
+
+            <div class="row">
+                <button onclick="addToList()">add</button>
+                <button onclick="print()">print</button>
+            </div>
+            <div id="printSpace"></div>
+        </div>
+        <br>
+        <div class="travelInfo">
+            <div class="search">
+                <button>Search</button> <input type="text" placeholder="name">
+                <label for="">Sort By:</label>
+                <select name="dropDown" id="">
+                    <option value="">ID</option>
+                    <option value="">Name</option>
+                </select>
+            </div>
+            <div class="nameInfo">
+                <label for="">First Name:</label> <input type="text" id="firstNameInfo">
+                <label for="">Last Name:</label> <input type="text" id="lastNameInfo">
+            </div>
+            <div class="bagDateInfo">
+                <label for="">Date of Birth:</label> <input type="text" id="birthInfo">
+                <label for="">Bags:</label> <input type="text"  id="bagInfo">
+            </div>
+            <div class="dateInfo">
+                <label for="">Date Leaving:</label> <input type="text" id="leaveInfo">
+                <label for="">Date Returning:</label> <input type="text" id="returnInfo">
+            </div>
+            <div class="locationInfo">
+                <label for="">Departing From:</label> <input type="text" id="departInfo">
+                <label for="">Arriving At:</label> <input type="text" id="arriveInfo">
+            </div>
+            <div class="flightInfo">
+                <label for="">Trip Duration:</label> <input type="text" id="durationInfo">
+                <label for="">Meal:</label> <input type="text" id="mealInfo">
+            </div>
+            <div class="ageCostInfo">
+                <label for="">Age:</label> <input type="text" id="ageInfo">
+                <label for="">Cost:</label> <input type="text" id="costInfo">
+            </div>
+            <div class="extraInfo">
+                <label for="">Extras:</label> <input type="text" id="extraInfo">
+            </div>
+        </div>
+    </div>
+
+    <!-- work in progress -->
+    <!-- <select onclick="populate()" id="selectNumber">
+        <option>Choose a number</option>
+    </select> -->
+
+    <script src="list.js"></script>
+</body>
+
+</html>
