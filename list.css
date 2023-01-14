@@ -45,7 +45,7 @@ button{
     'form info';
 }
 
-@media (max-width: 1400px){
+@media (max-width: 900px){
     .container {
             display: grid;
             grid-template-columns: 1fr;
