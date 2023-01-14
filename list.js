@@ -61,22 +61,13 @@ function addToList() {
     }
 }
 
+let arr2 = ["firstNameInfo","lastNameInfo","birthInfo","bagInfo","leaveInfo","returnInfo","departInfo","arriveInfo"]
+
+arr3 = ["firstName","lastName","birth","bags","leave","returning","depature","arrival"]
 function display(){
-    console.log("Hello")
-    document.getElementById("firstNameInfo").value =
-    document.getElementById("lastNameInfo").value = 
-    document.getElementById("birthInfo").value = ''
-    document.getElementById("bagInfo").value = ''
-    document.getElementById("leaveInfo").value = ''
-    document.getElementById("returnInfo").value = ''
-    document.getElementById("departInfo").value = ''
-    document.getElementById("arriveInfo").value = ''
-    document.getElementById("returnInfo").value = ''
-    document.getElementById("durationInfo").value = ''
-    document.getElementById("mealInfo").value = ''
-    document.getElementById("ageInfo").value = ''
-    document.getElementById("costInfo").value = ''
-    document.getElementById("extraInfo").innerHTML = ''
+    for(i=0;i < arr.length; i++){
+        document.getElementById(arr2[i]).value = arr[i].
+    }
 }
  
 function print() {
