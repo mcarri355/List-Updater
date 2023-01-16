@@ -72,7 +72,7 @@ function addToList() {
         
     }
 }
-var ID;
+
 function display(display){
     for(let i = 0; i < 8; i++){
         var x = ids[i]
@@ -89,6 +89,9 @@ function display(display){
         }
     }
 }
+
+var ID;
+
 let b;
 
 function updateT(){
